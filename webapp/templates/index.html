@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elezioni europee 2024 Volt-Italia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="{{ url_for('static', filename='logos/volt.svg')}}" alt="Logo" class="svg-logo">
+        </div>
+        <br>
+        <h1>Elezioni europee 2024</h1>
+    </header>
+    <div class="content">
+        <h2>Mappe delle preferenze rapportate agli elettori totali</h2>
+        <ul>
+            <li><a href="/ele_t_10000_totale">Totale</a></li>
+            <li><a href="/ele_t_10000_silvia">Silvia Panini</a></li>
+            <li><a href="/ele_t_10000_marcello">Marcello Saltarelli</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Mappe delle preferenze rapportate agli elettori effettivi</h2>
+        <ul>
+            <li><a href="/vot_t_10000_totale">Totale</a></li>
+            <li><a href="/vot_t_10000_silvia">Silvia Panini</a></li>
+            <li><a href="/vot_t_10000_marcello">Marcello Saltarelli</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Mappe delle preferenze rapportate agli elettori PD</h2>
+        <ul>
+            <li><a href="/voti_pd_10000_totale">Totale</a></li>
+            <li><a href="/voti_pd_10000_silvia">Silvia Panini</a></li>
+            <li><a href="/voti_pd_10000_marcello">Marcello Saltarelli</a></li>
+        </ul>
+    </div>
+</body>
+</html>
